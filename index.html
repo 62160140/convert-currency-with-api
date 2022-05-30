@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <img src="./img/money.png" alt="" class="money-img">
   <h1>โปรแกรมแปลงสกุลเงิน</h1>
-  <!-- ต้นทาง -->
   <div class="container">
+    <!--! ต้นทาง -->
     <div class="currency">
       <select name="" id="currency-one">
-        <option value="AED">AED</option>
+          <option value="AED">AED</option>
           <option value="ARS">ARS</option>
           <option value="AUD">AUD</option>
           <option value="BGN">BGN</option>
@@ -66,8 +67,14 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
       </select>
+      <input type="number" name="" id="amount-one" value="1">
     </div>
-    <!-- ปลายทาง -->
+
+    <div class="swap-container">
+      <button class="btn">สลับสกุลเงิน</button>
+      <div class="rate" id="rate">อัตราการเเลกเปลื่ยน</div>
+    </div>
+    <!--! ปลายทาง -->
     <div class="currency">
       <select name="" id="currency-two">
         <option value="AED">AED</option>
@@ -123,6 +130,7 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
       </select>
+      <input type="number" name="" id="amount-two" value="1">
     </div>
   </div>
 </body>

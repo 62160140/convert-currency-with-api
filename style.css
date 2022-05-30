@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+
+:root{
+  --padding:10px;
+  --border:1px solid #dedede;
+  --color: white;
+  --font-size: 16px;
+  --appearance: none;
+  --border-radius: 10px;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+
+body{
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.btn{
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px 5px;
+}
+
+.money-img{
+  width: 400px;
+}
+
+.currency{
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency:first-child select{
+  text-align: center;
+  padding: var(--padding);
+  border: var(--border);
+  background-color: rebeccapurple;
+  color: var(--color);
+  font-size: var(--font-size);
+  appearance: var(--appearance);
+  border-radius: var(--border-radius);
+  /* width: ; */
+}
+
+.currency:last-child select{
+  text-align: center;
+  padding: var(--padding);
+  border: var(--border);
+  background-color: yellow;
+  color: black;
+  font-size: var(--font-size);
+  appearance: var(--appearance);
+  border-radius: var(--border-radius);
+}
+
+select:hover{
+  width:110px;
+}
+
+#currency-two option:nth-child(odd){
+  background-color: antiquewhite;
+}
+#currency-one option:nth-child(odd){
+  background-color: red;
+}
+
+
+
+
+.currency input{
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.swap-container{
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate{
+  font-size: 20px;
+  padding: 0  10px;
+}
+
+select:focus,input:focus,button:focus{
+  outline: 0;
+}
