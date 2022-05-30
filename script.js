@@ -33,6 +33,14 @@ function display(data,origin,des) {
   amount_two.value = (amount_one.value * rate).toFixed(2);
 }
 
+swapBtn.addEventListener('click',()=>{
+  //USD=>THB || THB => USD
+  const temp = currency_one.value; //ต้นทาง
+  currency_one.value=currency_two.value;
+  currency_two.value=temp;
+  calculateMoney();
+})
+
 // onLoad
 calculateMoney();
 
